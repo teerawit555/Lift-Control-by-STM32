@@ -1,6 +1,7 @@
 # STM32 Elevator Control System (Simplified Assignment Version)
 
-> A basic automatic elevator control system simulation using **STM32F411CEU6** and **Raspberry Pi Zero 2 W**
+> A basic automatic elevator control system simulation using **STM32F411CEU6** and **Raspberry Pi Zero 2 W** <br>
+> ENE 330 EMBEDDED SYSTEM DEVELOPMENT (FINAL PROJECT)
 
 ---
 
@@ -29,7 +30,8 @@ The system is ideal for demonstrating UART communication, command parsing, and b
 - Controls 3 elevators in real-time using STM32
 - Communicates with Simulation Board (SB) via UART
 - Receives commands over USB CDC, e.g.:
-  - `UP,2,5\r\n` → Elevator goes to receive user floor 3, then go to floor 6 (destination) 
+  - `UP,2,5\r\n` → Elevator goes to receive user on floor 3, then go to floor 6 (destination)
+  - `DOWN,5,2\r\n` → Elevator goes down from floor 6, then go to floor 3 (destination) 
   - `GETCurrFloor,1\r\n` → Queries current floor of elevator 1
   - `GETuserFloor,1\r\n` → Queries current user floor
   - `GETuserReq,1\r\n` → Queries destination that user request
